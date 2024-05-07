@@ -1,27 +1,29 @@
+class Calculator:
+    def __init__(self,x,y):
+      self.x=x
+      self.y=y
+    def add(self):
+     print(f'{x}+{y}={x+y}') 
+    def subtract(self):
+     print(f'{x}-{y}={x-y}') 
+    def multiply(self):
+     print(f'{x}*{y}={x*y}')        
+    def divide(self):
+     print(f'{x}/{y}={x/y}')
+ 
 
-def add(x,y):
-    print(f'{x}+{y}={x+y}') 
-def subtract(x,y):
-    print(f'{x}-{y}={x-y}') 
-def multiply(x,y):
-    print(f'{x}*{y}={x*y}')        
-def divide(x,y):
-    print(f'{x}/{y}={x/y}') 
 
-
-print('Please Enter first number=')
-x=int(input())
-print('Please Enter second number=')
-y=int(input())
-print('Please choose one operator:( + , - , * , / ) ')
-s=input()
+x=int(input('Please Enter first number='))
+y=int(input('Please Enter second number='))
+s=input('Please choose one operator:( + , - , * , / ) ')
+Result=Calculator(x,y)
 if s == '+':
-    add(x,y)
+    Result.add()
 elif s == '-':
-    subtract(x,y) 
+    Result.subtract() 
 elif s == '*':
-    multiply(x,y)   
+    Result.multiply()   
 elif s == '/':
-    divide(x,y)              
+    Result.divide()              
 
 
